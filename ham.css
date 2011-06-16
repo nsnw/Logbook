@@ -1,0 +1,246 @@
+html
+{
+	height: 100%
+}
+
+body
+{
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	font-family: Verdana;
+	font-size: 11px;
+}
+
+#map_canvas
+{
+	height: 100%;
+}
+
+input, select
+{
+	font-size: 10px;
+}
+
+.infobox
+{
+	float: left;
+	margin-top: 2px;
+	padding-right: 10px;
+}
+
+.searchbox
+{
+	float: left;
+	padding-right: 5px;
+}
+.buttonbox
+{
+	margin-top: 3px;
+	padding-left: 5px;
+}
+
+#toplinks
+{
+	width: 98%;
+	height: 20px;
+	margin: 5px;
+	padding: 5px;
+	border: 1px dotted #c00;
+}
+
+#qsotable
+{
+	padding: 5px;
+	margin: 5px;
+	border: 1px solid #ccc;
+}
+
+#qsotable th
+{
+	padding: 5px;
+	background-color: #eee;
+	border: 1px solid #aaa;
+	border-right: 0;
+}
+
+#qsotable th.time
+{
+	width: 120px;
+}
+
+#qsotable th.callsign
+{
+	width: 100px;
+}
+
+#qsotable th.name
+{
+	width: 250px;
+}
+
+#qsotable th.locator
+{
+	width: 80px;
+}
+
+#qsotable th.frequency
+{
+	width: 100px;
+}
+
+#qsotable th.mode
+{
+	width: 50px;
+}
+
+#qsotable th.remark
+{
+	border-right: 1px solid #aaa;
+}
+
+#qsotable th a:link,
+#qsotable th a:visited,
+#qsotable th a:active
+{
+	text-decoration: none;
+	color: #070;
+}
+
+#qsotable th a:hover
+{
+	color: #0c0;
+}
+
+#qsotable th a.selected:link,
+#qsotable th a.selected:visited,
+#qsotable th a.selected:active
+{
+	background-color: #070;
+	color: #FFF;
+}
+
+#qsotable td
+{
+	border-bottom: 1px solid #ccc;
+	border-left: 1px dotted #ccc;
+	padding: 3px;
+}
+
+#qsotable tr.even
+{
+	background-color: #FFF;
+}
+
+#qsotable tr.odd
+{
+	background-color: #F7F7FF;
+}
+
+#qsotable td.mode,
+#qsotable td.locator,
+#qsotable td.frequency
+{
+	text-align: center;
+}
+
+#qsotable td.mode a:link,
+#qsotable td.mode a:visited,
+#qsotable td.mode a:active
+{
+	text-decoration: none;
+	color: #070;
+}
+
+#qsotable td.remark
+{
+	border-right: 1px dotted #ccc;
+}
+
+#qsotable a.callsign:link, #qsotable a.callsign:visited, #qsotable a.callsign:active,
+#toplinks a:link, #toplinks a:visited, #toplinks a:active
+{
+	color: #c00;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+#qsotable a.callsign:hover,
+#toplinks a:hover
+{
+	color: #0c0;
+	border-bottom: 1px dotted #0c0;
+	background-color: #cfc;
+}
+
+#qsotable td.callsign a.select:link,
+#qsotable td.callsign a.select:visited,
+#qsotable td.callsign a.select:active
+{
+	color: #070;
+	text-decoration: none;
+}
+
+#qsotable td.callsign a.select:hover
+{
+	background-color: #070;
+	color: #FFF;
+}
+
+#toplinks a.buttons:link,
+#toplinks a.buttons:visited,
+#toplinks a.buttons:active
+{
+	font-size: 12px;
+	font-weight: bold;
+	border: 1px solid #c00;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+#toplinks a.buttons:hover
+{
+	color: #FFF;
+	background-color: #C00;
+}
+
+#toplinks a.cancel:link,
+#toplinks a.cancel:visited,
+#toplinks a.cancel:active
+{
+	font-size: 12px;
+	font-weight: bold;
+	margin-top: 0;
+	padding-left: 8px;
+	padding-right: 2px;
+	padding-bottom: 2px;
+}
+
+#toplinks a.cancel:hover
+{
+	color: #0c0;
+	background-color: transparent;
+	border-bottom: 0;
+}
+
+.small
+{
+	font-size: 9px;
+}
+
+td
+{
+	vertical-align: top;
+}
+
+#footer
+{
+	font-size: 10px;
+	padding: 5px;
+}
+
+#footer a
+{
+	text-decoration: none;
+	color: #c00;
+}
