@@ -162,7 +162,7 @@ else
 ?>
 <div id="toplinks">
 <div class="infobox">
-<b>Logbook</b>
+<b>M&Oslash;VKG Logbook</b>
 </div>
 <div class="searchbox">
 <form method="GET" action="<?php echo $_SERVER['REQUEST_URI']; ?>">
@@ -257,6 +257,7 @@ if($filter_on)
 		?>
 		<a class="<?php echo $class; ?>" href="<?php echo $_SERVER['SCRIPT_URI']."?".$current."&orderby=COL_NAME&orderdir=DESC"; ?>">&#x21E9;</a>
 	</th>
+	<th colspan="2" class="report">Report</th>
 	<th class="locator">Locator&nbsp;
 		<?
 		if($order_by == "COL_GRIDSQUARE" && $order_dir == "ASC") { $class = "selected"; } else { $class = "not-selected"; }
@@ -303,6 +304,8 @@ foreach ($q['qso'] as $qso)
 			<td class="name"><b><? echo $qso['COL_NAME']; ?></b><br>
 			<span class="small"><? echo $qso['COL_QTH']; ?></span>
 			</td>
+			<td class="report-received"><? echo $qso['COL_RST_RCVD']; ?></td>
+			<td class="report-sent"><? echo $qso['COL_RST_SENT']; ?></td>
 			<td class="locator"><? echo $qso['COL_GRIDSQUARE']; ?></td>
 			<td class="frequency"><? printf("%f", $qso['COL_FREQ']/1000000); ?> <span class="small">(<? echo $qso['COL_BAND']; ?>)</span></td>
 			<td class="mode"><a class="mode" href="<?php echo $_SERVER['SCRIPT_URI']."?"."filteron=COL_MODE&filterby=".$qso['COL_MODE']; ?>"><?php echo $qso['COL_MODE']; ?></a></td>
@@ -313,4 +316,4 @@ foreach ($q['qso'] as $qso)
 }
 ?>
 </table>
-<div id="footer">Logbook v1.0 - &copy; 2011 Andy Smith <a href="http://m0vkg.org.uk/">M&Oslash;VKG</a>.</div>
+<div id="footer">Logbook v1.0 - &copy; 2011 Andy Smith <a href="http://m0vkg.org.uk/">M&Oslash;VKG</a>. Code available at <a href="https://github.com/m0vkg/Logbook">https://github.com/m0vkg/Logbook</a>.</div>
